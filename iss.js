@@ -25,7 +25,7 @@ const fetchMyIP = function(callback) {
       callback(Error(error), null);
       return;
     }
-    const ip = JSON.parse(body).ip;
+    
 
     callback(null, ip);
   });
