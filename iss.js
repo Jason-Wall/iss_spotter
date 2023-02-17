@@ -106,7 +106,6 @@ const nextIss = function(coord, callback) {
       return;
     }
 
-    // Convert incoming data to JSON
     const bodyJSON = JSON.parse(body);
     const passesMilli = bodyJSON.response;
 
@@ -141,45 +140,4 @@ const nextISSTimesForMyLocation = function(callback) {
 };
 
 
-// module.exports = { fetchMyIP, fetchCoordByIP, nextIss };
 module.exports = { nextISSTimesForMyLocation};
-
-// --------------------------------------------------------------
-
-
-
-// fetchMyIP((error, ip) => {
-//   console.log('ip:', ip);
-//   console.log('error: ',error);
-// });
-// --------------------------------------------------------------
-
-
-
-// // TEST VALUE
-// const ip ="172.219.207.222";
-// // const ip ="172";
-
-// fetchCoordByIP(ip,(error, coord) => {
-//   if (error){
-//     console.log('error: ',error);
-//   } else{
-//     console.log('coord:', coord.lat + ' ' + coord.lon);
-//   };
-// });
-      
-// --------------------------------------------------------------
-      
-
-
-//TEST VALUE ////////
-// const coord = {lat:51.0486151, lon:-114.0708459};
-// // const coord = {lat:51.0486151, lon:-11400.0708459};
-
-
-// nextIss(coord,(error,passes) => {
-//   console.log(passes);
-//   console.log(error);
-// });
-
-// --------------------------------------------------------------
